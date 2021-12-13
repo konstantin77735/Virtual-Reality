@@ -1,0 +1,11 @@
+.ourServices {
+  text-align: center;
+
+  &__item {
+    margin-top: 60px;
+    background: rgba(26, 44, 88, 0.4);
+    padding: 30px;
+    border-radius: 56px;
+    border: 1px solid #444;
+  }
+}

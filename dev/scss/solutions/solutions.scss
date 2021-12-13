@@ -1,0 +1,24 @@
+.solutions {
+  margin-top: 80px;
+
+  .row {
+    align-items: center;
+  }
+
+  h1 {
+    background: linear-gradient(to right, #3061ec, 32%, #ec4bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    color: #e5e7eb;
+  }
+
+  &__btns {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 62%;
+  }
+}

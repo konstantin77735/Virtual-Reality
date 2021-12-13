@@ -1,0 +1,26 @@
+@mixin colors($defaultColor, $visitColor, $hoverColor, $activeColor) {
+  color: $defaultColor;
+  &:visited {
+    color: $visitColor;
+  }
+  &:hover {
+    color: $hoverColor;
+  }
+  &:active {
+    color: $activeColor;
+  }
+}
+
+.projects {
+  &__a {
+    margin: 0 !important;
+    margin-top: 40px !important;
+    max-width: fit-content;
+
+    @include colors(#fff, #fff, #aaa, rgb(82, 82, 82));
+  }
+
+  .row {
+    align-items: center;
+  }
+}

@@ -1,0 +1,63 @@
+
+@mixin gradient($from, $to) {
+    background: linear-gradient(to right, $from, $to) !important;
+  }
+
+.subscribe {
+    text-align: center;
+
+    &__form{
+        position: relative;
+        display: flex;
+
+        max-width: 80%;
+        margin: auto;
+        margin-top: 35px;
+    }
+
+    &__input{
+
+
+        &_text{
+            height: 65px;
+            width: 100%;
+            padding: 20px;
+            border-radius: 35px;
+            background: rgba(100,100,100,0.25);
+            border: none;
+            outline: none;
+
+            &:focus{
+                border: none;
+                outline: none;
+            }
+        }
+    }
+
+    &__btn{
+        position: absolute;
+        right: 5px;
+        top: 0;
+        bottom: 0;
+        margin: auto !important;
+        max-height: 82%;
+        border-radius: 35px !important;
+
+        @include gradient(#2863ec, #7e55ed);
+        @include colors(#fff, #fff, #aaa, rgb(82, 82, 82));
+        
+    }
+
+    .title{
+        line-height: 2rem;
+    }
+
+    .wrapper{
+        border-radius: 36px;
+        border: 1px solid #222;
+        padding-top: 30px;
+        padding-bottom: 45px;
+        margin-top: 140px;
+        max-width: 86%;
+    }
+}
